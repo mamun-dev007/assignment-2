@@ -1,0 +1,193 @@
+/* font */
+/* noto-serif */
+<link rel="preconnect"href="https://fonts.googleapis.com"><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">.noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth"100;
+}
+
+/* inter */
+
+<link rel="preconnect"href="https://fonts.googleapis.com"><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"rel="stylesheet">.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* shared styles */
+.color {
+    color: #8987A1;
+    opacity: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    width: 135px;
+}
+
+.nav {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-items li {
+    list-style-type: none;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #8987A1;
+    font-weight: 500;
+}
+
+#home {
+    color: #252432;
+    font-weight: bold;
+}
+
+/* banner-section */
+
+.banner-section {
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    width: 95%;
+}
+
+.banner {
+    position: relative;
+    
+}
+
+.banner-title {
+    font-size: 4rem;
+    color: #000000;
+}
+
+.banner-span {
+    color: #E95A08;
+
+}
+.banner-image{
+    width: 100%;
+}
+
+.banner-subtitle {
+    font-size: 22px;
+    color: #000000;
+    opacity: 50%;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive-design */
+@media screen and (max-width:676px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .nav-items {
+        display: none;
+    }
+    .banner-image{
+        width: 100%;
+    }
+
+    /* banner-section */
+
+    .banner-section {
+        width: 90%;
+        margin: 28px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 28px;
+
+    }
+
+    .banner-title {
+        font-size: 1.4rem;
+    }
+
+    .banner-subtitle {
+        font-size: .7rem;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+}
