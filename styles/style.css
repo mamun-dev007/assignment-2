@@ -1,7 +1,6 @@
 /* font */
 /* noto-serif */
-<link rel="preconnect"href="https://fonts.googleapis.com"><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
-.noto-serif {
+<link rel="preconnect"href="https://fonts.googleapis.com"><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">.noto-serif {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -32,11 +31,13 @@
 }
 
 body {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
 }
 
 .navbar {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,6 +78,8 @@ body {
 /* banner-section */
 
 .banner-section {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     margin: 100px auto;
     align-items: center;
@@ -112,19 +115,23 @@ body {
 
 /* plants */
 .plants {
+    max-width: 1200px;
+    margin: auto;
     padding: 50px 0;
 }
 
 .plants-title {
     font-size: 3.1rem;
     text-align: center;
+    padding: 20px 0;
 }
 
 .plants-subtitle {
     text-align: center;
+    padding: 20px 0;
     font-size: 1.3rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
     color: #000000;
     opacity: 50%;
 }
@@ -161,8 +168,11 @@ body {
     padding: 10px;
     margin-top: 20px;
 }
+
 /* flower $ plants lover */
-.plants-lover{
+.plants-lover {
+    max-width: 1200px;
+    margin: auto;
     padding: 50px 0;
     margin: auto;
     display: grid;
@@ -170,25 +180,27 @@ body {
     gap: 100px;
 }
 
-.plants-badge{
-position: relative;
-width: 100%;    
+.plants-badge {
+    position: relative;
+    width: 100%;
 
 }
-.lover-badge{
+
+.lover-badge {
     position: absolute;
     width: 50%;
     left: 65%;
     top: -90px;
     animation: infiniteMode 3s linear infinite;
 }
-.plants-lover-title{
+
+.plants-lover-title {
     font-size: 50px;
     padding: 20px 0;
 }
 
-.lover-description li{
-    font-size:22px ;
+.lover-description li {
+    font-size: 22px;
     color: #000000;
     opacity: 50%;
     padding: 20px 10px;
@@ -197,25 +209,30 @@ width: 100%;
 
 /* deals flower */
 
-.deals{
+.deals {
+    max-width: 1200px;
+    margin: auto;
     padding: 50px 0;
 }
-.deals-section{
+
+.deals-section {
     display: flex;
     gap: 30px;
     padding: 50px 0;
 }
-.left-column{
+
+.left-column {
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex: 1;
 }
-.right-column{
+
+.right-column {
     flex: 2;
 }
 
-.deals-card{
+.deals-card {
     background-size: cover;
     background-position: center;
     color: white;
@@ -229,28 +246,60 @@ width: 100%;
     justify-content: center;
 
 }
-.deals-card a{
+
+.deals-card a {
     color: white;
-    font-size:24px;
-    
+    font-size: 24px;
+
 }
- .deals-card:nth-child(1){
+
+.deals-card:nth-child(1) {
     background-image: url('../assets/deal-bloom.png');
 }
-.deals-card:nth-child(2){
+
+.deals-card:nth-child(2) {
     background-image: url('../assets//deal-ana.png');
 }
-.right-column .deals-card{
+
+.right-column .deals-card {
     background-image: url('../assets/deal-zabo.png');
     height: 415px;
 }
 
 
+.join{
+    background-image: url('../assets/news-letter-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    
+}
 
+.join-title{
+text-align: center;
+color: white;
+padding: 100px 0 40px 0 ;
 
-
-
+}
+.input-section{
+    display: flex;
+    justify-content: center;
+    padding-bottom:100px ;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+}
+.input-section input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+.subscribe{
+    border: none;
+    padding: 10px 30px;
+    background-color: #E95A08;
+    color: white;
+}
 
 
 
@@ -313,65 +362,71 @@ width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .card-img{
+
+    .card-img {
         width: 100%;
     }
 
     .card-title, .card-doller, .card-btn {
         font-size: 16px;
     }
+
     /* flower $ plants lover */
-    .plants-lover ,.deals{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    
-}
+    .plants-lover, .deals {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
 
-.plants-badge img{
-    width: 100%;
-     
-}
-.lover-badge{
-    display: none;
-    
-}
-.plants-lover-title{
+    }
 
-    font-size: 24px;
-    padding: 20px 0px;
-    
-}
-.plants-description-section ul{
-   padding: 20px 30px;
-    margin: auto; 
-}
-.lover-description li{
-    font-size:14px ;
-}
-/* latest deals */
+    .plants-badge img {
+        width: 100%;
 
-.deals-section{
-    display: flex;
-flex-direction: column;
-}
+    }
 
+    .lover-badge {
+        display: none;
 
+    }
 
-.deals-card a{
-    color: white;
-    font-size:24px;
-    
-}
-.deals-card h1, h3{
+    .plants-lover-title {
+
+        font-size: 24px;
+        padding: 20px 0px;
+
+    }
+
+    .plants-description-section ul {
+        padding: 20px 30px;
+        margin: auto;
+    }
+
+    .lover-description li {
+        font-size: 14px;
+    }
+
+    /* latest deals */
+
+    .deals-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deals-card a {
+        color: white;
+        font-size: 24px;
+
+    }
+
+    .deals-card h1, h3 {
         font-size: 30px;
-}
-.right-column .deals-card{
-    background-image: url('../assets/deal-zabo.png');
-    height: 200px;
+    }
 
-}
+    .right-column .deals-card {
+        height: 200px;
+
+    }
 
 
 
@@ -385,14 +440,12 @@ flex-direction: column;
 }
 
 @keyframes infiniteMode {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 
 }
-
-
-
