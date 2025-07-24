@@ -84,6 +84,7 @@ body {
     margin: 100px auto;
     align-items: center;
     width: 100%;
+    overflow-x: 0;
 }
 
 .banner {
@@ -118,7 +119,11 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 50px 0;
+    overflow-x: 0;
 }
+.card img {
+        width: 100%;
+    }
 
 .plants-title {
     font-size: 3.1rem;
@@ -178,6 +183,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+     overflow-x: 0;
 }
 
 .plants-badge {
@@ -213,6 +219,7 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 50px 0;
+     overflow-x: 0;
 }
 
 .deals-section {
@@ -301,10 +308,11 @@ padding: 100px 0 40px 0 ;
 
 /* footer */
 .items{
-    margin: 100px 20px;
+    width: 90%;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
-    
+    overflow-x: 0;
     
 }
 .logo-section{
@@ -479,7 +487,7 @@ padding: 100px 0 40px 0 ;
         grid-template-columns: 1fr 1fr;
     }
 
-    .card-img {
+    .card img {
         width: 100%;
     }
 
