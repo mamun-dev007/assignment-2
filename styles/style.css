@@ -270,9 +270,7 @@ body {
 .join{
     background-image: url('../assets/news-letter-bg.png');
     background-size: cover;
-    background-repeat: no-repeat;
-
-    
+    background-repeat: no-repeat;   
 }
 
 .join-title{
@@ -301,10 +299,46 @@ padding: 100px 0 40px 0 ;
     color: white;
 }
 
+/* footer */
+.items{
+    margin: 100px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    
+    
+}
+.logo-section{
+    align-items: center;
+}
+.logo-description{
+    color: #000000;
+    opacity: 50%;
+    width: 80%;
 
+}
 
+.nav-item li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.nav-item li a {
+    color: #000000;
+    opacity: 50%;
+    text-decoration: none;
+}
+.social-item{
+    display: flex;
+    gap: 70px;
 
+}
 
+.social-item li{
+    list-style: none;
+    
+}
+.social-item li:nth-child(2){
+       margin-top: 8px;
+}
 
 
 /* responsive-design */
@@ -428,14 +462,12 @@ padding: 100px 0 40px 0 ;
 
     }
 
-
-
-
-
-
-
-
-
+/* footer */
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 }
 
